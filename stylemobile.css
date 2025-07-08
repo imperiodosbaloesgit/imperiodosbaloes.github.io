@@ -210,6 +210,9 @@ footer p {
   box-shadow: 0 -10px 20px #5CC6D0, 0 10px 20px #F9E171;
   z-index: 2;
 }
+.item a {
+  text-decoration: none;
+}
 
 .item img {
   max-height: 180px;

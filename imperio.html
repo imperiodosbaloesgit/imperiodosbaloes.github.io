@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Império dos Balões</title>
+ <style>
+  .catalogo {
+      max-width: 1200px;
+      margin: 40px auto;
+      margin-bottom: 120px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .catalogo h1 {
+      color: #52C3C8;
+      margin-bottom: 30px;
+    }
+
+    .btn-kits {
+  display: inline-block;
+  margin: 10px auto 30px;
+  padding: 12px 24px;
+  background-color: #52C3C8;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-kits:hover {
+  background-color: #3cb0b7;
+  transform: scale(1.05);
+}
+
+    .grid-catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.item {
+  background-image: var(--item-fundo);
+  /* background-color: #fff; */
+   background-size: cover; 
+   /* background: #f9f9f9; */
+  color: var(--cor-texto);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 220px; /* altura padronizada */
+  position: relative;
+  transition: transform 0.2s;
+}
+.item .tooltip {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 110%; /* posição acima da imagem */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  filter: drop-shadow(0 4px 6px rgba(82, 195, 200, 0.3))
+        drop-shadow(0 -4px 6px rgba(249, 225, 113, 0.25))
+        drop-shadow(0 -4px 6px rgba(92, 198, 208, 0.2))
+        drop-shadow(0 4px 6px rgba(249, 225, 113, 0.25));
+
+}
+
+.item img {
+  max-height: 180px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.item img:hover {
+  transform: scale(1.2); /* aumenta suavemente a imagem */
+  z-index: 2;
+}
+
+
+.item p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+
+.item a {
+  text-decoration: none;
+  color: inherit; /* mantém a cor do texto sem usar a cor azul padrão de links */
+}
+
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 -10px 20px #5CC6D0,
+    0 10px 20px #F9E171;
+  z-index: 2
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+ <!-- 
+  /$$$$$$ /$$      /$$ /$$$$$$$  /$$$$$$$$ /$$$$$$$  /$$$$$$  /$$$$$$ 
+|_  $$_/| $$$    /$$$| $$__  $$| $$_____/| $$__  $$|_  $$_/ /$$__  $$
+  | $$  | $$$$  /$$$$| $$  \ $$| $$      | $$  \ $$  | $$  | $$  \ $$
+  | $$  | $$ $$/$$ $$| $$$$$$$/| $$$$$   | $$$$$$$/  | $$  | $$  | $$
+  | $$  | $$  $$$| $$| $$____/ | $$__/   | $$__  $$  | $$  | $$  | $$
+  | $$  | $$\  $ | $$| $$      | $$      | $$  \ $$  | $$  | $$  | $$
+ /$$$$$$| $$ \/  | $$| $$      | $$$$$$$$| $$  | $$ /$$$$$$|  $$$$$$/
+|______/|__/     |__/|__/      |________/|__/  |__/|______/ \______/ 
+                                                                     
+    Site criado por @jeanpseven 
+    github: github.com/jeanpseven 
+            github.com/pseventech                                                                 
+                                                                      -->
+
+  <header>
+    <img src="assets/logoimperio.png" alt="Logo Império dos Balões" />
+  </header>
+
+  <nav>
+    <a href="#hero">Início</a>
+    <a href="#portifolio">Portfólio</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="hero" class="hero">
+    <h1>Bem-vindo à Império dos Balões</h1>
+    <p>Especialistas em mídia e impressão com criatividade, elegância e impacto visual!</p>
+    <a class="btn-whatsapp" href="http://api.whatsapp.com/send?1=pt_BR&phone=5531994403372" 
+       target="_blank">Fale Conosco no WhatsApp</a>
+  </section>
+
+  <div class="hero"> <h1>Clientes parceiros</h1></div>
+  <!-- Marcas atendidas -->
+  <!-- <div class="marcas" id="marcas"></div> -->
+   <iframe src="swiper/index.html" style="width: 100%; height: 100%; border: none; border-top: 2px solid var(--azul);
+      border-bottom: 2px solid var(--amarelo);"></iframe>
+  <!-- <iframe src="inventarioteste.html" style="width: 100%; height: 600px; border: none;"></iframe> -->
+    <section id="portifolio" class="catalogo">
+    <h1 >Inventário de Produtos</h1>
+    <div class="grid-catalogo">
+
+      <div class="item">
+        <a href="portifolio/balões/index.html">
+          <img src="assets/Inventário/balão.png" alt="Balão">
+        <p>Balão 2/3/4/6/8M</p>
+         <div class="tooltip">Tamanhos: 2M, 3M, 4M, 6M, 8M</div>
+        </a>
+      </div>
+
+      <div class="item">
+        <a href="portifolio/WindBanners/index.html"><img src="assets/Inventário/windbanner.png " title="Tamanho: 3M" alt="Windbanner">
+        <p>Windbanner 3M</p></a>
+        <div class="tooltip">Tamanho: 3M</div>
+      </div>
+
+      <div class="item">
+        <a href="portifolio/boneco/index.html"><img src="assets/Inventário/bonecointerativo.png"alt="Boneco Interativo">
+        <p>Boneco Interativo</p>
+        <div class="tooltip">Tamanhos: 2,3,4Metros</div></a>
+      </div>
+
+      <div class="item">
+        <a href="portifolio/tendaStandSemBolha/"><img src="assets/Inventário/tendasembolha.png" alt="Tenda sem bolha">
+        <p>Tenda sem bolha</p></a>
+        <div class="tooltip">Tamanhos: 3x3,4x4,5x5</div>
+        
+      </div>
+
+      <div class="item">
+        <a href="portifolio/TendaStand/index.html">
+          <img src="assets/Inventário/tenda.png" alt="Tenda">
+        <p>Tenda</p></a>
+        <div class="tooltip">Tamanhos: 3x3/3,5x3,5/4x4/4x5/5x5</div>
+      </div>
+
+       <div class="item">
+        <a href="portifolio/igloo/index.html"><img src="assets/Inventário/iglu.png" alt="Iglu">
+        <p>Iglu</p>
+        <div class="tooltip">Tamanhos: 3x3,4x4,5x5</div></a>
+      </div>
+
+        <div class="item">
+        <a href="portifolio/tendaQuadrada/index.html"><img src="assets/Inventário/tendaquadrada.png" alt="Tenda Quadrada">
+        <p>Tenda Quadrada</p>
+        <div class="tooltip">Tamanhos: 5x5,6x6,7x7</div></a>
+      </div>
+
+      <div class="item">
+        <a href="portifolio/ombrelone/index.html"><img src="assets/Inventário/ombrelone.png" alt="ombrelone">
+        <p>Ombrelone</p>
+        <div class="tooltip">Redondos: 2x2/2,40x2,40/3x3 Quadrado: 1,6x1,6/3x3/2,40x2,40</div></a>
+      </div>
+
+      <div class="item">
+        <a href="portifolio/Cooler/index.html"><img src="assets/Inventário/cooler.png" alt="Cooler">
+        <p>Cooler</p>
+        <div class="tooltip">Capacidade: 10L</div></a>
+      </div>
+
+       <div class="item">
+        <a href="portifolio/cooler50/index.html"><img src="assets/Inventário/cooler 50L.png" alt="Cooler">
+        <p>Cooler 30</p>
+        <div class="tooltip">Capacidade: 30L com rodinhas,com/sem testeira</div></a>
+      </div>
+
+      <div class="item">
+        <a href="portifolio/réplica/index.html" ><img style="margin-bottom: 50px;" src="assets/Inventário/réplica.png" alt="Réplica">
+        <p>Réplica</p></a>
+      </div>
+
+      <div class="item">
+        <a href="portifolio/balcão/index.html"><img src="assets/Inventário/balcão.png" alt="Balcão">
+        <p>Balcão</p></a>
+        <div class="tooltip">Sem/Com Rodas</div>
+      </div>
+
+        <div class="item">
+        <a href="portifolio/minibalão/index.html"><img src="assets/Inventário/minibalão.png" alt="Balcão">
+        <p>Mini Balão</p></a>
+      </div>
+
+      <div class="item">
+        <a href="portifolio/roleta/index.html"><img src="assets/Inventário/roleta.png" alt="Roleta">
+        <p>Roleta</p></a>
+      </div>
+
+        <div class="item">
+        <a href="portifolio/roletaPremium/index.html"><img src="assets/Inventário/roletapremium.png" alt="Roleta Premium">
+        <p>Roleta Premium</p></a>
+      </div>
+
+      <div class="item">
+        <a href="portifolio/medalhão/index.html"><img src="assets/Inventário/medalhão.png" alt="Medalhão">
+        <p>Medalhão</p></a>
+        <div class="tooltip">Tamanhos: 2,3,4,5M</div>
+      </div>
+
+      <!-- <div class="item">
+        <img src="https://via.placeholder.com/150x150?text=Bandeira" alt="Bandeira">
+        <p>Bandeira</p>
+      </div> -->
+
+      <div class="item">
+        <a href="portifolio/Foguete/index.html"><img src="assets/Inventário/foguete.png " alt="Foguete">
+        <p>Foguete</p>
+        <div class="tooltip">Tamanhos: 2,5/3/4M</div></a>
+      </div>
+
+      <div class="item">
+        <a href="portifolio/totem/index.html"><img src="assets/Inventário/totem.png" alt="Totem"> 
+        <p>Totem</p>
+        <div class="tooltip">Tamanhos: 2,3,4M</div></a>
+      </div>
+
+      <div class="item">
+        <a href="portifolio/portal/index.html"><img src="assets/Inventário/portal.png" alt="Portal"> 
+        <p>Portal</p></a>
+        <div class="tooltip">Tamanhos: 4,5x3,5M/5x4M</div>
+      </div>
+
+       <!-- <div class="item">
+        <img src="https://via.placeholder.com/150x150?text=Chute+ao+Gol" alt="Portal chute ao gol">
+        <p>Portal chute ao gol</p>
+      </div>  -->
+
+      <div class="item">
+        <a href="portifolio/plotagem/index.html"><img src="assets/Inventário/carro.png"alt="carro">
+        <p>Plotagem carro</p>
+        <div class="tooltip">Plotagem Total ou Parcial</div></a>
+      </div>
+
+      <div class="item">
+        <a href="portifolio/uniforme/index.html"><img src="assets/Inventário/uniforme.png"alt="carro">
+        <p>Macacão/vestido Promocional</p>
+        <div class="tooltip">Uniforme</div></a>
+      </div>
+    </div>
+  </section>
+  <div style="text-align: center;">
+  <h1>Kits de Produtos</h1>
+  <a href="kits.html" class="btn-kits">Ver Kits</a>
+</div>
+
+  
+
+<footer id="contato">
+    <strong>ORÇAMENTOS E SERVIÇOS</strong>
+    <p>(31) 98470-2727</p>
+    <p>(31) 99440-3372</p>
+    <p>(31) 2567-4113</p>
+    <p>RUA RIO COMPRIDO 1733, RIACHO, CONTAGEM/MG</p>
+    <p>CEP 32280-070</p>
+    <br>
+    <strong>© 2025 Império dos Balões - Todos os direitos reservados.</strong>
+  </footer>
+      <script src="marcas.js"></script>
+
+
+</body>
+</html>

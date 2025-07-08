@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kits - Império dos Balões</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --cor-principal: #52C3C8;
+      --cor-secundaria: #F9E171;
+      --texto: #000;
+      --fundo: var(--);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --texto: #fff;
+        --fundo: #121212;
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--imagem-fundo);
+      color: var(--texto);
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      max-width: 200px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, fr));
+      gap: 30px;
+    }
+
+ .kit {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  background: var(--imagem-fundo);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: visible;
+  position: relative;
+  transition: border 0.3s ease;
+}
+
+.kit:hover {
+  border: none;
+}
+
+.kit img {
+  width: 100%; /* aumenta o tamanho da imagem */
+  max-width: none; /* remove limite */
+  height: auto;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+
+    .kit img:hover {
+      transform: scale(1.05);
+    }
+
+    .kit h2 {
+      margin: 15px 0 10px;
+      color: var(--cor-principal);
+    }
+
+    .preco {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .whatsapp {
+      background-color: var(--cor-principal);
+      color: #fff;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    .whatsapp:hover {
+      background-color: var(--cor-secundaria);
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="assets/logoimperio.png" alt="Império dos Balões" />
+    </a>
+  </header>
+
+  <main>
+    <div class="grid">
+      <div class="kit">
+        <img src="assets/kits/kit1.png" alt="Kit 1">
+        <h2>Kit 1</h2>
+        <div class="preco">R$ 5.099,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Kit%201%20de%20R$5099,00" target="_blank">
+          Solicitar via WhatsApp
+        </a>
+      </div>
+
+      <div class="kit">
+        <img src="assets/kits/kit2.png" alt="Kit 2">
+        <h2>Kit 2</h2>
+        <div class="preco">R$ 5.899,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Kit%202%20de%20R$5899,00" target="_blank">
+          Solicitar via WhatsApp
+        </a>
+      </div>
+
+      <div class="kit">
+        <img src="assets/kits/kit3.png" alt="Kit 3">
+        <h2>Kit 3</h2>
+        <div class="preco">R$ 6.899,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Kit%203%20de%20R$6899,00" target="_blank">
+          Solicitar via WhatsApp
+        </a>
+      </div>
+
+      <div class="kit">
+        <img src="assets/kits/kit4.png" alt="Kit 4">
+        <h2>Kit 4</h2>
+        <div class="preco">R$ 6.499,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Kit%204%20de%20R$6499,00" target="_blank">
+          Solicitar via WhatsApp
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <strong>ORÇAMENTOS E SERVIÇOS</strong><br>
+    (31) 9 8470-2727 | (31) 99440-3372 | (31) 2567-4113<br>
+    RUA RIO COMPRIDO 1733, RIACHO, CONTAGEM/MG - CEP 32280-070<br><br>
+    <strong>© 2025 Império dos Balões</strong>
+  </footer>
+
+</body>
+</html>

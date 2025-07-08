@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+     html,
+     :root {
+    --azul: #52C3C8;
+    --amarelo: #FAD648;
+    --branco: #ffffff;
+    --cinza: #333333;
+
+    /* Cores padrão (modo claro) */
+    --cor-fundo: var(--branco);
+    --cor-texto: var(--cinza);
+    --cor-header: var(--branco);
+    --cor-nav: var(--azul);
+    --cor-footer: var(--azul);
+    --imagem-fundo: url('assets/fundoimperio.jpg');
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cor-fundo: #121212;
+      --cor-texto: #e0e0e0;
+      --cor-header: #000000;
+      --cor-nav: #1e888c;
+      --cor-footer: #1e888c;
+      --imagem-fundo: url('assets/fundoimperiodark.png');
+      --item-fundo: url('assets/itemfundodark.png');
+      --imagem-fundo: url('assets/fundoimperiodark.png');
+    }
+  }
+
+    body {
+      background-color: var(--cor-fundo);;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      /* height: auto; */
+
+    }
+
+    .swiper {
+      width: 100%;
+      height: auto;  /* Garante que o swiper ocupe toda a altura da tela */
+      padding-top: 0;
+      padding-bottom: 0;
+
+      background-color: var(--cor-fundo);
+      
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+ 
+      width: 300px;
+      height: 100%; 
+    }
+
+    .swiper-slide img {
+      margin-top: 8px;
+      display: block;
+      width: 50%;
+      height: auto;
+      max-height: 50%;
+    
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div tabindex="-1" class="swiper mySwiper">
+    <div tabindex="-1" class="swiper-wrapper">
+      <!-- Adicione suas imagens aqui -->
+      <div class="swiper-slide">
+        <img style="margin-top: -1%" src="images/mcdonalds.png" alt="McDonald's" />
+      </div>
+      <div class="swiper-slide">
+        <img style="margin-top: 15%;" src="images/yamahacarmo.png" alt="Yamaha Carmo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/oticascarol.jpg" alt="Óticas Carol" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/pedigree.png" alt="Pedigree" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/whiskas.png" alt="Whiskas" />
+      </div>
+      <div class="swiper-slide">
+        <img style="margin-top: 15%;" src="images/sicoob.png" alt="Sicoob" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/CVC.png" alt="CVC" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/cacaushow.png" alt="Cacau Show" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/fisk.png" alt="Fisk" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/claro.png" alt="Claro" />
+      </div>
+      <div class="swiper-slide">
+        <img style="margin-top: 15%;" src="images/granvilla.png" alt="Gran Villa" />
+      </div>
+      <div class="swiper-slide">
+        <img style="margin-top: 15%;" src="images/wizard.png" alt="Wizard" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/yopro.png" alt="Yopro" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/supermercadosbh.png" alt="Supermercado BH" />
+      </div>
+      <div class="swiper-slide">
+        <img style="margin-top: 10%;" src="images/fiat.png" alt="Fiat" />
+      </div>
+      <div class="swiper-slide">
+        <img style="margin-top: 10%;" src="images/webmotors.png" alt="Web Motors" />
+      </div>
+      <div class="swiper-slide">
+        <img style="margin-top: 15%;" src="images/cocacola.png" alt="Coca-Cola" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/cartaodetodos.png" alt="Cartão de Todos" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/minascap.png" alt="Minascap" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/quatree.png" alt="Quatree" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/ecobier.png" alt="Ecobier" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/wolkswagen.png" alt="Volkswagen" />
+      </div>
+      <div class="swiper-slide">
+        <img style="margin-top: 10%;" src="images/ello.png" alt="Ello" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/lautpremiumbeer.png" alt="Laut Premium Beer" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/johndeere.png" alt="John Deere" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/ursopolarrejuntes.png" alt="Urso Polar Rejuntes" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/locfrotas.png" alt="Locfrotas" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/tropeiraalimentos.png" alt="Tropeira Alimentos" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/universoagv.png" alt="Universo AGV" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/beekbeer.png" alt="Beek Beer" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/qualis.png" alt="Qualis" />
+      </div>
+    </div>
+
+    <!-- Paginação -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+  selectableElements: "none",
+  loop: true,
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  scrollbars: false,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 0.1,
+    slideShadows: false,
+  },
+  breakpoints: {
+    // Quando a largura da tela for >= 0px (mobile)
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 0
+    },
+    // Quando a largura da tela for >= 768px (tablet ou desktop)
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    // Quando for tela grande (ex: monitor)
+    1024: {
+      slidesPerView: 6.9,
+      spaceBetween: 30
+    }
+  }
+});
+
+  </script>
+</body>
+
+</html>

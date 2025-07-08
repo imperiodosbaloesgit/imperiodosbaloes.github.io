@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balões - Império dos Balões</title>
+  <style>
+  :root {
+    /* Cores */
+    --azul: #52C3C8;
+    --amarelo: #FAD648;
+    --branco: #ffffff;
+    --cinza: #333333;
+
+    --cor-principal: var(--azul);
+    --cor-secundaria: var(--amarelo);
+    --cor-texto: var(--cinza);
+    --fundo-claro: var(--branco);
+    --cor-header: var(--branco);
+    --cor-nav: var(--azul);
+    --cor-footer: var(--azul);
+
+    /* Caminhos corrigidos para diretórios anteriores */
+    --imagem-fundo: url('../../assets/fundoimperio.jpg');
+    --item-fundo: url('../../assets/itemfundo.png');
+
+    /* Para imagens do swiper */
+    --swiper-img-object: cover;
+    --swiper-img-width: 100%;
+    --swiper-img-height: 100%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cor-texto: #e0e0e0;
+      --fundo-claro: #121212;
+      --cor-header: #000000;
+      --cor-nav: #1e888c;
+      --cor-footer: #1e888c;
+      --imagem-fundo: url('../../assets/fundoimperiodark.png');
+      --item-fundo: url('../../assets/itemfundodark.png');
+    }
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: var(--fundo-claro);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: var(--imagem-fundo);
+    background-size: cover;
+    background-position: center;
+  }
+
+  header {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--fundo-claro);
+  }
+
+  header img {
+    max-width: 200px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--cor-principal);
+  }
+
+  iframe {
+    width: 90%;
+    height: 80vh;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+  }
+
+    .btn-whatsapp {
+    display: inline-block;
+    background-color: var(--cor-nav);
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    margin-bottom: 100px;
+  }
+
+  .btn-whatsapp:hover {
+    background-color: var(--cor-secundaria);
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+
+    width: 100%;
+    background-color: var(--cor-footer);
+    color: var(--cor-texto);
+  }
+
+  .swiper-slide img {
+    width: var(--swiper-img-width);
+    height: var(--swiper-img-height);
+    object-fit: var(--swiper-img-object);
+  }
+
+  @media screen and (max-width: 600px) {
+    iframe {
+      height: 60vh;
+    }
+
+    :root {
+      --swiper-img-object: contain;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <header>
+    <a href="../../index.html">
+      <img src="../../assets/logoimperio.png" alt="Império dos Balões" />
+    </a>
+  </header>
+
+  <iframe src="wind.html"></iframe>
+
+  <a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20de%20um%20WindBanner" target="_blank">
+    Solicitar via WhatsApp
+  </a>
+
+  <footer>
+    <strong>ORÇAMENTOS E SERVIÇOS</strong><br>
+    (31) 9 8470-2727 | (31) 99440-3372 | (31) 2567-4113<br>
+    RUA RIO COMPRIDO 1733, RIACHO, CONTAGEM/MG - CEP 32280-070<br><br>
+    <strong>© 2025 Império dos Balões</strong>
+  </footer>
+
+</body>
+</html>

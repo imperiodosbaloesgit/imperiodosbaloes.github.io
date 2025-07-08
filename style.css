@@ -1,0 +1,177 @@
+
+  :root {
+    --azul: #52C3C8;
+    --amarelo: #FAD648;
+    --branco: #ffffff;
+    --cinza: #333333;
+
+    /* Cores padrão (modo claro) */
+    --cor-fundo: var(--branco);
+    --cor-texto: var(--cinza);
+    --cor-header: var(--branco);
+    --cor-nav: var(--azul);
+    --cor-footer: var(--azul);
+    --imagem-fundo: url('assets/fundoimperio.jpg');
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cor-fundo: #121212;
+      --cor-texto: #e0e0e0;
+      --cor-header: #000000;
+      --cor-nav: #1e888c;
+      --cor-footer: #1e888c;
+      --imagem-fundo: url('assets/fundoimperiodark.png');
+      --item-fundo: url('assets/itemfundodark.png');
+      --imagem-fundo: url('assets/fundoimperiodark.png');
+    }
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    background-image: var(--imagem-fundo);
+    background-position: center;
+    background-repeat: repeat;
+  }
+
+  header {
+    background-color: var(--cor-header);
+    padding: 30px;
+    text-align: center;
+    color: var(--cor-texto);
+  }
+
+  header img {
+    max-width: 300px;
+    width: 25%;
+    height: auto;
+  }
+
+  nav {
+    background-color: var(--cor-nav);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 10px 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: var(--amarelo);
+  }
+
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: transparent;
+  }
+
+  .hero h1 {
+    color: var(--azul);
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+
+  .btn-whatsapp {
+    display: inline-block;
+    background-color: #3cb6b0;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-whatsapp:hover {
+    background-color: #fbc640;
+  }
+
+  .marcas {
+    margin: 40px auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    background-color: var(--branco);
+    border-top: 2px solid var(--azul);
+    border-bottom: 2px solid var(--amarelo);
+    text-align: center;
+  }
+
+  .marcas img {
+    height: 80px;
+    margin: 0 20px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: var(--branco);
+  }
+
+  footer {
+    background-color: var(--cor-footer);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  footer p {
+    margin: 5px 0;
+  }
+
+  @media (max-width: 600px) {
+    header img {
+      width: 80%;
+    }
+
+    .marcas img {
+      height: 60px;
+      margin: 0 10px;
+    }
+
+    .btn-whatsapp {
+      font-size: 16px;
+      padding: 12px 20px;
+    }
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      border-top: 2px solid var(--azul);
+      border-bottom: 2px solid var(--amarelo);
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 400px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 50%;
+      max-height: 25%;
+    }
+  }
+ 

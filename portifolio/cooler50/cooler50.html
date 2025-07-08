@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper com Fotos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  :root {
+    /* Variáveis padrão para PC */
+    --swiper-height: 100vh;
+    --swiper-slide-bg: #222;
+    --swiper-img-object: cover;
+    --swiper-img-width: 100%;
+    --swiper-img-height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      /* Variáveis para celular */
+      --swiper-height: 100vh;
+      --swiper-slide-bg: #111;
+      --swiper-img-object: contain;
+      --swiper-img-width: 100%;
+      --swiper-img-height: 100%;
+    }
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: sans-serif;
+  }
+
+  .swiper {
+    width: 100%;
+    height: var(--swiper-height);
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--swiper-slide-bg);
+  }
+
+  .swiper-slide img {
+    width: var(--swiper-img-width);
+    height: var(--swiper-img-height);
+    object-fit: var(--swiper-img-object);
+  }
+</style>
+
+
+</head>
+<body>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper" id="swiper-wrapper">
+      <!-- Slides geradas via JS -->
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

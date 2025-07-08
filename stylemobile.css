@@ -1,0 +1,301 @@
+:root {
+  --azul: #52C3C8;
+  --amarelo: #FAD648;
+  --branco: #ffffff;
+  --cinza: #333333;
+
+  --cor-fundo: var(--branco);
+  --cor-texto: var(--cinza);
+  --cor-header: var(--branco);
+  --cor-nav: var(--azul);
+  --cor-footer: var(--azul);
+  --imagem-fundo: url('assets/fundoimperio.jpg');
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-fundo: #121212;
+    --cor-texto: #e0e0e0;
+    --cor-header: #000000;
+    --cor-nav: #1e888c;
+    --cor-footer: #1e888c;
+    --imagem-fundo: url('assets/fundoimperiodark.png');
+    --item-fundo: url('assets/itemfundodark.png');
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  background-image: var(--imagem-fundo);
+  background-position: center;
+  background-repeat: repeat;
+}
+
+header {
+  background-color: var(--cor-header);
+  padding: 30px;
+  text-align: center;
+  color: var(--cor-texto);
+}
+
+header img {
+  max-width: 300px;
+  width: 25%;
+  height: auto;
+}
+
+nav {
+  background-color: var(--cor-nav);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--branco);
+  text-decoration: none;
+  margin: 10px 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--amarelo);
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: transparent;
+  height: 200%;
+}
+
+.hero h1 {
+  color: var(--azul);
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #3cb6b0;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #fbc640;
+}
+
+.marcas {
+  margin: 40px auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px 0;
+  background-color: var(--branco);
+  border-top: 2px solid var(--azul);
+  border-bottom: 2px solid var(--amarelo);
+  text-align: center;
+}
+
+.marcas img {
+  height: 80px;
+  margin: 0 20px;
+  vertical-align: middle;
+  display: inline-block;
+  background-color: var(--branco);
+}
+
+footer {
+  background-color: var(--cor-footer);
+  color: var(--branco);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* ===================== */
+/* === Catálogo Swiper === */
+/* ===================== */
+
+.catalogo {
+  max-width: 1200px;
+  height: auto;
+  margin: 40px auto 120px;
+  padding: 20px;
+  text-align: center;
+}
+
+.catalogo h1 {
+  color: var(--azul);
+  margin-bottom: 30px;
+}
+
+.btn-kits {
+  display: inline-block;
+  margin: 10px auto 30px;
+  padding: 12px 24px;
+  background-color: var(--azul);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-kits:hover {
+  background-color: #3cb0b7;
+  transform: scale(1.05);
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  height:250%;
+  padding: 30px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Item do Catálogo */
+.item {
+  background-image: var(--item-fundo);
+  background-size: cover;
+  color: var(--cor-texto);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 220px;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 -10px 20px #5CC6D0, 0 10px 20px #F9E171;
+  z-index: 2;
+}
+
+.item img {
+  max-height: 180px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-top: auto;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.item img:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.item p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+
+/* Tooltip */
+.item .tooltip {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  filter: drop-shadow(0 4px 6px rgba(82, 195, 200, 0.3))
+          drop-shadow(0 -4px 6px rgba(249, 225, 113, 0.25))
+          drop-shadow(0 -4px 6px rgba(92, 198, 208, 0.2))
+          drop-shadow(0 4px 6px rgba(249, 225, 113, 0.25));
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .item {
+    max-width: 90%;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 60%;
+  }
+  .marcas img {
+    height: 60px;
+    margin: 0 10px;
+  }
+  .btn-whatsapp {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  .swiper-slide {
+    margin-top: 70px;
+    height:200%
+  }
+  .item {
+    height: auto;
+    max-width: 80%;
+    margin-left: 10%;
+  }
+  .item img {
+    max-height: 140px;
+  }
+  .item a {
+    text-decoration: none;
+  }
+}

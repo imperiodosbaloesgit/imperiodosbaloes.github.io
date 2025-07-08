@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balões - Império dos Balões</title>
+  <style>
+    :root {
+      --cor-principal: #52C3C8;
+      --cor-secundaria: #F9E171;
+      /* --texto: #000;
+      --fundo: #fff; */
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --texto: #fff;
+        --fundo: #121212;
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--fundo);
+      color: var(--texto);
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      max-width: 200px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 80px;
+      color: var(--cor-principal);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 60px;
+    }
+
+    .kit {
+      position: relative;
+      background: var(--fundo);
+      border-radius: 16px;
+      padding-top: 120px;
+      padding-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: visible;
+    }
+
+    .kit img {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 140px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+
+ .kit img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 10px 20px #52C3C8)
+          drop-shadow(0 -10px 20px #F9E171)
+          drop-shadow(0 -10px 20px #5CC6D0)
+          drop-shadow(0 10px 20px #F9E171);
+}
+
+
+    .kit h2 {
+      margin-top: 100px;
+      font-size: 20px;
+      color: var(--cor-principal);
+    }
+
+    .preco {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .whatsapp {
+      background-color: var(--cor-principal);
+      color: #fff;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    .whatsapp:hover {
+      background-color: var(--cor-secundaria);
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="assets/logoimperio.png" alt="Império dos Balões" />
+    </a>
+  </header>
+
+  <main>
+    <h1>Balão Total Impresso</h1>
+    <div class="grid">
+      <div class="kit">
+        <img src="assets/Inventário/balão2mts.png" alt="Balão Total 2m">
+        <h2>Balão Total 2m</h2>
+        <div class="preco">R$ 2.300,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Balão%20Total%20Impresso%202m%20de%20R$2300,00" target="_blank">Solicitar via WhatsApp</a>
+      </div>
+      <div class="kit">
+        <img src="assets/Inventário/total3mts.png" alt="Balão Total 3m">
+        <h2>Balão Total 3m</h2>
+        <div class="preco">R$ 2.900,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Balão%20Total%20Impresso%203m%20de%20R$2900,00" target="_blank">Solicitar via WhatsApp</a>
+      </div>
+      <div class="kit">
+        <img src="assets/inventário/total4mts.png" alt="Balão Total 4m">
+        <h2>Balão Total 4m</h2>
+        <div class="preco">R$ 3.700,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Balão%20Total%20Impresso%204m%20de%20R$3700,00" target="_blank">Solicitar via WhatsApp</a>
+      </div>
+      <div class="kit">
+        <img src="assets/baloes/total6m.png" alt="Balão Total 6m">
+        <h2>Balão Total 6m</h2>
+        <div class="preco">R$ 5.000,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Balão%20Total%20Impresso%206m%20de%20R$5000,00" target="_blank">Solicitar via WhatsApp</a>
+      </div>
+      <div class="kit">
+        <img src="assets/baloes/total8m.png" alt="Balão Total 8m">
+        <h2>Balão Total 8m</h2>
+        <div class="preco">R$ 6.600,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Balão%20Total%20Impresso%208m%20de%20R$6600,00" target="_blank">Solicitar via WhatsApp</a>
+      </div>
+    </div>
+
+    <h1 style="margin-top: 80px;">Balão Normal</h1>
+    <div class="grid">
+      <div class="kit">
+        <img src="assets/baloes/balão2mts" alt="Balão Normal 2m">
+        <h2>Balão Normal 2m</h2>
+        <div class="preco">R$ 1.850,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Balão%20Normal%202m%20de%20R$1850,00" target="_blank">Solicitar via WhatsApp</a>
+      </div>
+      <div class="kit">
+        <img src="assets/baloes/balão3mts" alt="Balão Normal 3m">
+        <h2>Balão Normal 3m</h2>
+        <div class="preco">R$ 2.250,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Balão%20Normal%203m%20de%20R$2250,00" target="_blank">Solicitar via WhatsApp</a>
+      </div>
+      <div class="kit">
+        <img src="assets/baloes/balão4mts" alt="Balão Normal 4m">
+        <h2>Balão Normal 4m</h2>
+        <div class="preco">R$ 2.750,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Balão%20Normal%204m%20de%20R$2750,00" target="_blank">Solicitar via WhatsApp</a>
+      </div>
+      <div class="kit">
+        <img src="assets/baloes/normal6m.png" alt="Balão Normal 6m">
+        <h2>Balão Normal 6m</h2>
+        <div class="preco">R$ 3.990,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Balão%20Normal%206m%20de%20R$3990,00" target="_blank">Solicitar via WhatsApp</a>
+      </div>
+      <div class="kit">
+        <img src="assets/baloes/normal8m.png" alt="Balão Normal 8m">
+        <h2>Balão Normal 8m</h2>
+        <div class="preco">R$ 5.050,00</div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531994403372&text=Gostaria%20do%20Balão%20Normal%208m%20de%20R$5050,00" target="_blank">Solicitar via WhatsApp</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <strong>ORÇAMENTOS E SERVIÇOS</strong><br>
+    (31) 9 8470-2727 | (31) 99440-3372 | (31) 2567-4113<br>
+    RUA RIO COMPRIDO 1733, RIACHO, CONTAGEM/MG - CEP 32280-070<br><br>
+    <strong>© 2025 Império dos Balões</strong>
+  </footer>
+
+</body>
+</html>

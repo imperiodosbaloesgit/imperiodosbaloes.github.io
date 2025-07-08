@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventário de Produtos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .catalogo {
+      max-width: 1200px;
+      margin: 40px auto;
+      margin-bottom: 1200px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .catalogo h1 {
+      color: #52C3C8;
+      margin-bottom: 30px;
+    }
+
+    .grid-catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 220px; /* altura padronizada */
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.item img {
+  max-height: 180px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.item img:hover {
+  transform: scale(1.2); /* aumenta suavemente a imagem */
+  z-index: 2;
+}
+
+
+.item p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+  </style>
+</head>
+<body>
+
+  <section class="catalogo">
+    <h1 >Inventário de Produtos</h1>
+    <div class="grid-catalogo">
+
+      <div class="item">
+        <img src="assets/Inventário/balão.png" alt="Balão">
+        <p>Balão</p>
+      </div>
+
+      <div class="item">
+        <img src="assets/Inventário/windbanner.png" alt="Windbanner">
+        <p>Windbanner</p>
+      </div>
+
+      <div class="item">
+        <img src="assets/Inventário/tendasembolha.png" alt="Tenda sem bolha">
+        <p>Tenda</p>
+      </div>
+
+      
+      <div class="item">
+        <img src="assets/Inventário/tenda.png" alt="Tenda">
+        <p>Tenda</p>
+      </div>
+
+       <div class="item">
+        <img src="assets/Inventário/iglu.png" alt="Iglu">
+        <p>Ombrelone</p>
+      </div>
+
+      <div class="item">
+        <img src="https://via.placeholder.com/150x150?text=Ombrelone" alt="Ombrelone">
+        <p>Ombrelone</p>
+      </div>
+
+      <div class="item">
+        <img src="https://via.placeholder.com/150x150?text=Cooler" alt="Cooler">
+        <p>Cooler</p>
+      </div>
+
+      <div class="item">
+        <img src="https://via.placeholder.com/150x150?text=Balcão" alt="Balcão">
+        <p>Balcão</p>
+      </div>
+
+      <div class="item">
+        <img src="https://via.placeholder.com/150x150?text=Roleta" alt="Roleta">
+        <p>Roleta</p>
+      </div>
+
+      <div class="item">
+        <img src="https://via.placeholder.com/150x150?text=Bandeira" alt="Bandeira">
+        <p>Bandeira</p>
+      </div>
+
+      <div class="item">
+        <img src="https://via.placeholder.com/150x150?text=Foguete" alt="Foguete">
+        <p>Foguete</p>
+      </div>
+
+      <div class="item">
+        <img src="https://via.placeholder.com/150x150?text=Totem" alt="Totem">
+        <p>Totem</p>
+      </div>
+
+      <div class="item">
+        <img src="https://via.placeholder.com/150x150?text=Chute+ao+Gol" alt="Portal chute ao gol">
+        <p>Portal chute ao gol</p>
+      </div>
+
+      <div class="item">
+        <img src="https://via.placeholder.com/150x150?text=Boneco+Interativo" alt="Boneco interativo">
+        <p>Boneco interativo</p>
+      </div>
+
+      <div class="item">
+        <img src="https://via.placeholder.com/150x150?text=Plotagem+Carro" alt="Plotagem carro">
+        <p>Plotagem carro</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

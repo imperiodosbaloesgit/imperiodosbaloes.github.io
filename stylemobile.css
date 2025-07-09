@@ -39,8 +39,8 @@ body {
   background-repeat: repeat;
 }
 iframe {
-  height: 100px; /* ajuste conforme necessário */
-
+  height: 150px; /* ajuste conforme necessário */
+  overflow: hidden;
 }
 
 header {

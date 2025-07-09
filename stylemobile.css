@@ -38,6 +38,10 @@ body {
   background-position: center;
   background-repeat: repeat;
 }
+iframe {
+  height: 100px; /* ajuste conforme necessário */
+
+}
 
 header {
   background-color: var(--cor-header);
@@ -76,7 +80,7 @@ nav a:hover {
   text-align: center;
   padding: 60px 20px;
   background: transparent;
-  height: 200%;
+  height: auto;
 }
 
 .hero h1 {
@@ -203,6 +207,7 @@ footer p {
   text-align: center;
   position: relative;
   transition: transform 0.2s;
+    margin: 0 auto; /* Centraliza sem estourar largura */
 }
 
 .item:hover {
@@ -301,4 +306,9 @@ footer p {
   .item a {
     text-decoration: none;
   }
+  html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 }

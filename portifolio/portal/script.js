@@ -25,7 +25,7 @@
 
   // 🌀 Inicializar o Swiper com config para PC e Mobile
   const swiper = new Swiper(".mySwiper", {
-    slidesPerView: isMobile ? 1 : 4,         // 1 slide no celular, 3 no PC
+    slidesPerView: isMobile ? 1 : 1.5,         // 1 slide no celular, 3 no PC
     spaceBetween: isMobile ? 10 : 30,
     loop: true,
     centeredSlides: true,

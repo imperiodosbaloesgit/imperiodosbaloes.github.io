@@ -1,6 +1,6 @@
 
   // 🔧 Variáveis configuráveis
-  const totalImagens = 35;
+  const totalImagens = 36;
   const pastaImagens = "imagens/";
   const nomeBase = "foto";
   const extensao = "jpg";
@@ -25,7 +25,7 @@
 
   // 🌀 Inicializar o Swiper com config para PC e Mobile
   const swiper = new Swiper(".mySwiper", {
-    slidesPerView: isMobile ? 1 : 4,         // 1 slide no celular, 4 no PC
+    slidesPerView: isMobile ? 1 : 2.5,         // 1 slide no celular, 4 no PC
     spaceBetween: isMobile ? 10 : 30,
     loop: true,
     centeredSlides: true,

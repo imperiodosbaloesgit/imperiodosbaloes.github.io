@@ -1,6 +1,6 @@
 
   // 🔧 Variáveis configuráveis
-  const totalImagens = 22;
+  const totalImagens = 23;
   const pastaImagens = "imagens/";
   const nomeBase = "foto";
   const extensao = "jpg";
